@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Futura Medium';
+    src: url('fonts/Futura-Medium-01.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Bold';
+    src: url('fonts/Futura-Bold-03.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+:root {
+    --black: #000000;
+    --amarillo: #f7c500;
+    --naranja: #da6219;
+    --futura-medium: 'Futura Medium', sans-serif;
+    --futura-bold: 'Futura Bold', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    font: inherit;
+    text-decoration: inherit;
+}
+
+/*  Hero  */
+.hero {
+    background-image: url("./images/bg-hero.jpg");
+    height: 100vh;
+    padding-top: 36px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+    color: aliceblue;
+    font-family: var(--futura-medium);
+    text-transform: uppercase;
+}
+header a:hover {
+    color: var(--amarillo);
+}
+
+/* navbar */
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding-right: 20px;
+}
+.logo {
+    height: 120px;
+    width: auto;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************************/
+/*****************************************************************************************/
+/**************** media queries ********************/
+
+@media screen and (max-width: 780px) {
+  header {
+    padding-inline: 20px;
+  }
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: antiquewhite;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-background);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    background-color: var(--naranja);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+    padding-right: 0;
+  }
+
+  .nav-list li a {
+    color: black;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 1.5em;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    header {
+      padding-left: 50px;
+    }
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  }
+}
