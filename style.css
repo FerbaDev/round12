@@ -23,6 +23,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+}
 a {
     color: inherit;
     font: inherit;
@@ -70,10 +73,36 @@ nav {
 .cerrar-menu {
     display: none;
 }
-
-
-
-
+/*Hero main*/
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 20px;
+    gap: 2em;
+    text-transform: uppercase;
+}
+.hero-main h1 {
+    color: var(--amarillo);
+    font-family: var(--futura-bold);
+    font-size: 4rem;
+}
+.hero-main p {
+    color: white;
+    font-family: var(--futura-medium);
+    text-wrap: balance;
+    width: 50%;
+    text-align: center;
+}
+.hero-main a {
+    background-color: var(--amarillo);
+    color: var(--black);
+    padding: 5px 32px;
+    font-family: var(--futura-bold);
+    font-size: 2rem;
+}
 
 
 
