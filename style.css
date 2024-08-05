@@ -37,6 +37,8 @@ a {
     background-image: url("./images/bg-hero.jpg");
     height: 100vh;
     padding-top: 36px;
+    background-position: center;
+    background-size: cover;
 }
 header {
     display: flex;
@@ -99,14 +101,21 @@ nav {
 .hero-main a {
     background-color: var(--amarillo);
     color: var(--black);
-    padding: 5px 32px;
+    padding: 5px 64px;
     font-family: var(--futura-bold);
     font-size: 2rem;
 }
+.hero-main a:hover {
+    transform: scale(1.1);
+}
+/****** Servicios ******/
 
-
-
-
+.servicios-container {
+    background-image: url("./images/bg-servicios.jpg");
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+}
 
 
 
