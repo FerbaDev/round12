@@ -269,35 +269,100 @@ nav {
 .calendar-container {
   min-height: 90vh;
   background-color: var(--gris);
+  width: 100%;
 }
 .calendar-header {
+  width: 100%;
   background-image: url("./images/bg-header-calendar.png");
   background-position: right;
   background-size: cover;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  gap: 4em;
 }
 .calendar-header img {
   height: 15em;
+  padding-inline: 50px;
 }
 .calendar-info-header {
   display: flex;
   flex-direction: row;
-  gap: 4em;
 }
 .calendar-info-header h3 {
   color: var(--naranja);
   text-transform: uppercase;
   font-family: var(--futura-bold);
+  font-size: 1.5em;
 }
 .header-horarios {
   display: flex;
   flex-direction: row;
-  gap: 2em;
   font-family: var(--futura-bold);
   text-wrap: balance;
+  font-size: 1.3em;
+}
+/*     calendar grid    */
+.calendario-container {
+  padding: 50px;
+}
+.calendar-grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 columnas */
+  grid-template-rows: repeat(11, 50px); /* 11 filas */
+  gap: 1px; /* Espacio entre las celdas */
+}
+.time-header {
+  color: var(--naranja);
+  font-family: var(--futura-bold);
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  color: var(--naranja);
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-slot, .day {
+  font-family: var(--futura-medium);
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.time-slot {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+.day {
+  flex-direction: column;
+}
+.day p {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.day span {
+  font-size: 14px;
+}
+.dia-doble-cont {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  gap: 5px;
+}
+.dia-doble-borde {
+  border-right: 2px solid black;
+  padding-right: 5px;
 }
 /******************************************************************************************/
 /*****************************************************************************************/
