@@ -284,11 +284,20 @@ nav {
 }
 .calendar-info-header {
   display: flex;
+  flex-direction: row;
+  gap: 4em;
 }
 .calendar-info-header h3 {
   color: var(--naranja);
   text-transform: uppercase;
   font-family: var(--futura-bold);
+}
+.header-horarios {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  font-family: var(--futura-bold);
+  text-wrap: balance;
 }
 /******************************************************************************************/
 /*****************************************************************************************/
