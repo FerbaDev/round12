@@ -13,6 +13,7 @@
 }
 :root {
     --black: #000000;
+    --gris: #e8ebea;
     --amarillo: #f7c500;
     --naranja: #da6219;
     --futura-medium: 'Futura Medium', sans-serif;
@@ -31,7 +32,13 @@ a {
     font: inherit;
     text-decoration: inherit;
 }
-
+.section-title {
+  font-family: var(--futura-bold);
+  color: var(--naranja);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding: 24px;
+}
 /*  Hero  */
 .hero {
     background-image: url("./images/bg-hero.jpg");
@@ -121,12 +128,7 @@ nav {
   width: 80%;
   padding: 0 4rem;
 }
-.serv-box h2 {
-  color: var(--naranja);
-  font-family: var(--futura-bold);
-  font-size: 2rem;
-  padding-bottom: 10px;
-}
+
 .serv-box p {
   font-family: var(--futura-medium);
   font-size: 14px;
@@ -150,15 +152,7 @@ nav {
 .carousel-section {
   text-align: center;
   padding: 20px;
-  background-color: #f3f3f3;
-}
-
-.carousel-section h2 {
-  font-family: var(--futura-bold);
-  color: var(--naranja);
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  padding: 24px;
+  background-color: var(--gris);
 }
 
 .carousel-container {
@@ -231,14 +225,71 @@ nav {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.planes-info-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  font-family: var(--futura-medium);
+  text-transform: uppercase;
+}
+.plan-info-card {
+  background-color: var(--naranja);
+  padding: 5px 90px;
+  margin: 1em;
+}
+.plan-info-card-niños {
+  background-color: #fff;
+  padding: 5px 90px;
+  margin: 1em;
+}
+.plan-title {
+  font-size: 14px;
+}
+.plan-precio {
+  font-size: 2.5em;
+  font-family: var(--futura-bold);
 }
 
 
 
+.planes-cta {
+  background-color: #ca283c;
+  color: #fff;
+  padding: 5px 64px;
+  font-family: var(--futura-bold);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 
-
-
-
+/*************** Calendario y horario *******************/
+.calendar-container {
+  min-height: 90vh;
+  background-color: var(--gris);
+}
+.calendar-header {
+  background-image: url("./images/bg-header-calendar.png");
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.calendar-header img {
+  height: 15em;
+}
+.calendar-info-header {
+  display: flex;
+}
+.calendar-info-header h3 {
+  color: var(--naranja);
+  text-transform: uppercase;
+  font-family: var(--futura-bold);
+}
 /******************************************************************************************/
 /*****************************************************************************************/
 /************************  media queries ********************************/
