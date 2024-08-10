@@ -146,6 +146,99 @@ nav {
   padding-top: 4rem;
 }
 
+/************* Instalaciones  ****************/
+.carousel-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+
+.carousel-section h2 {
+  font-family: var(--futura-bold);
+  color: var(--naranja);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding: 24px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%; /* El contenedor ocupa el 80% del ancho de la pantalla */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Los botones se colocan fuera del contenedor de las imágenes */
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+  height: 550px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 1em;
+  list-style-type: none;
+}
+
+.carousel-slide {
+  min-width: 33%; /* Cada imagen ocupa el 33% del contenedor para mostrar 3 a la vez */
+  height: 550px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control {
+  position: relative;
+  top: 50%;
+  font-size: 4em;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transform: translateY(-50%);
+}
+
+.carousel-control.prev {
+  margin-right: 0.3em;
+}
+
+.carousel-control.next {
+  margin-left: 0.3em;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 600px) {
+  .carousel-slide {
+    min-width: 100%;
+  }
+
+  .carousel-control {
+    padding: 5px;
+  }
+}
+/*************** Planes y mensualidades*******************/
+
+.planes-container {
+  background-image: url("./images/bg-planes.png");
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
 /******************************************************************************************/
 /*****************************************************************************************/
 /************************  media queries ********************************/
