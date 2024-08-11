@@ -309,7 +309,7 @@ nav {
 .calendar-grid-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr); /* 8 columnas */
-  grid-template-rows: repeat(11, 50px); /* 11 filas */
+  grid-template-rows: repeat(11, 60px); /* 11 filas */
   gap: 1px; /* Espacio entre las celdas */
 }
 .time-header {
@@ -338,11 +338,12 @@ nav {
   justify-content: center;
   align-items: center;
   border: 1px solid #ccc;
+  font-size: 14px;
 }
 
 .time-slot {
   font-weight: bold;
-  background-color: #e6e6e6;
+  background-color: var(--gris);
 }
 .day {
   flex-direction: column;
@@ -364,6 +365,80 @@ nav {
   border-right: 2px solid black;
   padding-right: 5px;
 }
+
+/********* BLOG ************/
+.blog-container {
+  background-color: #0c0c0c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  padding: 50px;
+}
+
+.articles-cards-container {
+  display: flex;
+  gap: 2em;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.article-card {
+  width: 40%;
+  height: 150px;
+  display: flex;
+  gap: 1em;
+}
+.article-img1 {
+  background-image: url("./images/foto1.png");
+}
+.article-img2 {
+  background-image: url("./images/foto2.png");
+}
+.article-img3 {
+  background-image: url("./images/foto3.png");
+}
+.article-img4 {
+  background-image: url("./images/foto4.png");
+}
+.article-img {
+  height: 150px;
+  width: 150px;
+  background-position: center;
+  background-size: cover;
+}
+.article-info {
+  font-family: var(--futura-medium);
+  text-wrap: balance;
+}
+.article-info h4 {
+  color: var(--naranja);
+}
+.article-info p {
+  color: grey;
+  font-size: 14px;
+  font-weight: 100;
+}
+.article-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.article-info-container a {
+  font-family: var(--futura-bold);
+  background-color: var(--amarillo);
+  color: #0c0c0c;
+  padding: 5px 42px;
+}
+
+
+
+
+
+
+
 /******************************************************************************************/
 /*****************************************************************************************/
 /************************  media queries ********************************/
