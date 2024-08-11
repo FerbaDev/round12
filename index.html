@@ -307,10 +307,54 @@
      <section class="contact-container">
         <h2 class="section-title">Contacto</h2>
         <div class="contact-box">
-            <form action="" class="contact-form"></form>
-            <div class="contact-info"></div>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <div class="inputs-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" required>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" required>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" name="telefono" required>
+                        </div>
+                        <div class="textarea">
+                            <label for="mensaje">Teléfono:</label>
+                            <textarea name="mensaje" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="bi bi-envelope-fill"></i>
+                    <div class="info-detalle">
+                        <h4>Email</h4>
+                        <p>round12@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-phone-fill"></i>
+                    <div class="info-detalle">
+                        <h4>Teléfono</h4>
+                        <p>+52 900 999 9999</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div class="info-detalle">
+                        <h4>Ubicación</h4>
+                        <p>Av. 535 116, Unidad San Juan, Gustavo A. Madero, 07969 Ciudad de México, CDMX.</p>
+                    </div>
+                </div>
+            </div>
         </div>
      </section>
+     <!-- Footer -->
+      <footer>
+
+      </footer>
     <script src="./main.js" type="module"></script>
 </body>
 </html>

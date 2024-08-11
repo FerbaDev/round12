@@ -438,7 +438,8 @@ nav {
   position: relative;
   display: flex;
   flex-direction: column;
- align-items: center;
+  align-items: center;
+  padding: 50px;
 }
 .contact-container::before  {
   content: '';
@@ -451,6 +452,84 @@ nav {
   filter: blur(2px) brightness(110%); /* Aplica los filtros que desees */
   z-index: -1;
 }
+.contact-box {
+  display: flex;
+}
+.form-container {
+  width: 600px;
+  padding: 20px;
+  background-color: var(--amarillo);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  font-family: var(--futura-medium);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.inputs-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Permite que los inputs ocupen el mismo ancho que el textarea */
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  height: calc(3 * 51px + 20px); /* Altura para coincidir con los 3 inputs */
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: var(--amarillo);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: var(--futura-medium);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/************************  footer ********************************/
+footer {
+  height: 300px;
+  background-color: var(--amarillo);
+}
+
+
+
+
+
+
+
 
 
 
