@@ -440,6 +440,7 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  justify-content: center;
 }
 .contact-container::before  {
   content: '';
@@ -453,10 +454,14 @@ nav {
   z-index: -1;
 }
 .contact-box {
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2em;
 }
 .form-container {
-  width: 600px;
   padding: 20px;
   background-color: var(--amarillo);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -517,7 +522,26 @@ button {
 button:hover {
   background-color: #555;
 }
-
+.contact-info {
+  font-family: var(--futura-medium);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.info-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+.info-item i {
+  color: var(--amarillo);
+  font-size: 3rem;
+}
+.info-detalle h4 {
+  text-transform: uppercase;
+}
 /************************  footer ********************************/
 footer {
   height: 300px;
