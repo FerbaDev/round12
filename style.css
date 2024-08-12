@@ -759,106 +759,55 @@ margin-block: 20px;
 }
 
 /*************** Calendario y horario *******************/
-.calendar-container {
-  display: none;
-  min-height: 90vh;
-  background-color: var(--gris);
-  width: 100%;
-}
+
 .calendar-header {
-  width: 100%;
-  background-image: url("./images/bg-header-calendar.png");
-  background-position: right;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 4em;
+  flex-direction: column;
+  padding: 20px;
+  gap: 2em;
 }
 .calendar-header img {
-  height: 15em;
-  padding-inline: 50px;
+  height: 10em;
+  padding: 0;
 }
 .calendar-info-header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 .calendar-info-header h3 {
-  color: var(--naranja);
-  text-transform: uppercase;
-  font-family: var(--futura-bold);
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .header-horarios {
-  display: flex;
-  flex-direction: row;
-  font-family: var(--futura-bold);
-  text-wrap: balance;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
   font-size: 1.3em;
 }
 /*     calendar grid    */
 .calendario-container {
-  padding: 50px;
+  /* padding: 50px; */
+  display: none;
 }
-.calendar-grid-container {
+.calendar-mobile {
+  height: 80px;
   display: grid;
-  grid-template-columns: repeat(8, 1fr); /* 8 columnas */
-  grid-template-rows: repeat(11, 60px); /* 11 filas */
-  gap: 1px; /* Espacio entre las celdas */
+  align-content: center;
+  text-align: center;
+  padding: 20px;
 }
-.time-header {
-  color: var(--naranja);
+.calendar-mobile a {
+  background-color: #333;
+  color: var(--amarillo);
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-family: var(--futura-bold);
   text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header {
-  color: var(--naranja);
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.time-slot, .day {
-  font-family: var(--futura-medium);
-  background-color: #fff;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ccc;
-  font-size: 14px;
-}
-
-.time-slot {
-  font-weight: bold;
-  background-color: var(--gris);
-}
-.day {
-  flex-direction: column;
-}
-.day p {
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.day span {
-  font-size: 14px;
-}
-.dia-doble-cont {
-  display: flex;
-  flex-direction: row;
-  font-size: small;
-  gap: 5px;
-}
-.dia-doble-borde {
-  border-right: 2px solid black;
-  padding-right: 5px;
-}
 
 
 
@@ -884,7 +833,10 @@ margin-block: 20px;
     cursor: pointer;
     color: antiquewhite;
   }
-
+  .cerrar-menu {
+    padding: 0;
+    margin-right: -6px;
+  }
   .nav {
     opacity: 0;
     visibility: hidden;
