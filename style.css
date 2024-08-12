@@ -584,32 +584,6 @@ footer img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******************************************************************************************/
 /*****************************************************************************************/
 /************************  media queries ********************************/
@@ -619,7 +593,6 @@ footer img {
     font-size: 1.5em;
   }
 
-  /* hero main */
   /*Hero main*/
 
 .hero-main h1 {
@@ -858,25 +831,25 @@ margin-block: 20px;
 background-color: #ffffff81;
 padding: 8px;
 }
-.info-item i {
-  color: var(--amarillo);
-  font-size: 3rem;
+
+/************************  footer ********************************/
+footer {
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 20px;
 }
-.info-detalle h4 {
-  text-transform: uppercase;
+footer img {
+  height: 150px;
+  width: auto;
+  margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.icons {
+  width: 100%;
+  justify-content: center;
+}
 }
 
 @media screen and (max-width: 780px) {
