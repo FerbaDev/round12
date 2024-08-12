@@ -254,8 +254,6 @@ nav {
   font-family: var(--futura-bold);
 }
 
-
-
 .planes-cta {
   background-color: #ca283c;
   color: #fff;
@@ -693,7 +691,7 @@ display: none;
 
 .carousel-control {
   font-size: 1em;
-  padding: 10px;
+  padding: 5px;
   background-color: transparent;
   color: black;
   font-size: 2em;
@@ -708,18 +706,159 @@ display: none;
   margin-left: 0.1em;
 }
 
-/* Estilo para pantallas pequeñas */
-@media (max-width: 600px) {
-  .carousel-slide {
-    min-width: 100%;
-  }
+/*************** Planes y mensualidades*******************/
 
-  .carousel-control {
-    padding: 5px;
-  }
+.planes-container {
+  min-height: 150vh;
+  background-position: left;
+  background-size: cover;
+  padding: 20px;
+}
+.planes-container h2 {
+  font-size: 36px;
+  padding: 30px 0;
+}
+.planes-adult-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.planes-info-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 2em;
+}
+.plan-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 70px;
+  margin: 0;
+  width: 90%;
+}
+.planes-niños-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.plan-info-card-niños {
+  background-color: #fff;
+  padding: 5px 70px;
+  margin: 0;
+  width: 90%;
+}
+.plan-title {
+  font-size: 12px;
 }
 
+.planes-cta {
+margin-block: 20px;
+}
 
+/*************** Calendario y horario *******************/
+.calendar-container {
+  display: none;
+  min-height: 90vh;
+  background-color: var(--gris);
+  width: 100%;
+}
+.calendar-header {
+  width: 100%;
+  background-image: url("./images/bg-header-calendar.png");
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4em;
+}
+.calendar-header img {
+  height: 15em;
+  padding-inline: 50px;
+}
+.calendar-info-header {
+  display: flex;
+  flex-direction: row;
+}
+.calendar-info-header h3 {
+  color: var(--naranja);
+  text-transform: uppercase;
+  font-family: var(--futura-bold);
+  font-size: 1.5em;
+}
+.header-horarios {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--futura-bold);
+  text-wrap: balance;
+  font-size: 1.3em;
+}
+/*     calendar grid    */
+.calendario-container {
+  padding: 50px;
+}
+.calendar-grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 columnas */
+  grid-template-rows: repeat(11, 60px); /* 11 filas */
+  gap: 1px; /* Espacio entre las celdas */
+}
+.time-header {
+  color: var(--naranja);
+  font-family: var(--futura-bold);
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  color: var(--naranja);
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-slot, .day {
+  font-family: var(--futura-medium);
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.time-slot {
+  font-weight: bold;
+  background-color: var(--gris);
+}
+.day {
+  flex-direction: column;
+}
+.day p {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.day span {
+  font-size: 14px;
+}
+.dia-doble-cont {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  gap: 5px;
+}
+.dia-doble-borde {
+  border-right: 2px solid black;
+  padding-right: 5px;
+}
 
 
 
