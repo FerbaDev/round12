@@ -504,10 +504,9 @@ textarea {
   height: calc(3 * 51px + 20px); /* Altura para coincidir con los 3 inputs */
 }
 
-button {
+.contact-button {
   padding: 12px;
   border: none;
-  border-radius: 4px;
   background-color: #333;
   color: var(--amarillo);
   font-size: 1.2em;
@@ -517,7 +516,7 @@ button {
   margin-top: 10px;
 }
 
-button:hover {
+.contact-button:hover {
   background-color: #555;
 }
 .contact-info {
@@ -831,6 +830,44 @@ margin-block: 20px;
 .article-info-container {
   width: 60%;
 }
+
+/****************  Contacto *****************/
+.contact-container  {
+  align-items: flex-start;
+  padding: 20px;
+}
+.contact-container h2 {
+  padding: 20px 0;
+}
+.contact-box {
+  flex-direction: column;
+  gap: 1.2em;
+}
+.form-container {
+  padding: 20px;
+  width: 100%;
+}
+.form-group {
+  flex-direction: column;
+}
+.contact-info {
+  width: 100%;
+  gap: 1em;
+}
+.info-item {
+background-color: #ffffff81;
+padding: 8px;
+}
+.info-item i {
+  color: var(--amarillo);
+  font-size: 3rem;
+}
+.info-detalle h4 {
+  text-transform: uppercase;
+}
+
+
+
 
 
 
