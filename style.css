@@ -620,7 +620,7 @@ footer img {
 .hero-main-cta {
   display: inline-block;
   text-align: center;
-  padding: 5px 54px;
+  padding: 5px 24px;
   font-size: 1.5rem;
 }
 .hero-main-cta:hover {
@@ -814,10 +814,11 @@ margin-block: 20px;
 }
 .articles-cards-container {
   align-items: center;
+  gap: 3em;
 }
 .article-card {
   width: 100%;
-  height: 120px;
+  height: 130px;
   gap: 1em;
 }
 .article-img {
