@@ -37,7 +37,7 @@ a {
   color: var(--naranja);
   text-transform: uppercase;
   font-size: 2.5rem;
-  padding: 24px;
+  padding: 24px 0;
 }
 /*  Hero  */
 .hero {
@@ -89,14 +89,16 @@ nav {
     justify-content: center;
     align-items: center;
     height: 70vh;
-    padding: 20px;
+    padding: 50px;
     gap: 2em;
     text-transform: uppercase;
 }
 .hero-main h1 {
     color: var(--amarillo);
     font-family: var(--futura-bold);
-    font-size: 4rem;
+    font-size: 3rem;
+    width: 50%;
+    text-align: center;
 }
 .hero-main p {
     color: white;
@@ -154,7 +156,14 @@ nav {
   padding: 20px;
   background-color: var(--gris);
 }
-
+.carousel-section p {
+  text-align: left;
+  width: 80%;
+  font-family: var(--futura-medium);
+  color: gray;
+  padding: 20px 200px;
+  font-size: 14px;
+}
 .carousel-container {
   position: relative;
   width: 80%; /* El contenedor ocupa el 80% del ancho de la pantalla */
@@ -228,6 +237,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.planes-container p {
+  font-family: var(--futura-medium);
 }
 .planes-info-container {
   display: flex;
@@ -594,19 +606,24 @@ footer img {
   }
 
   /*Hero main*/
-
+  .hero-main {
+    padding: 20px;
+  }
 .hero-main h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  width: 100%;
 }
 .hero-main p {
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
-.hero-main a {
+.hero-main-cta {
+  display: inline-block;
+  text-align: center;
   padding: 5px 54px;
   font-size: 1.5rem;
 }
-.hero-main a:hover {
+.hero-main-cta:hover {
   transform: scale(1.1);
 }
 /****** Servicios ******/
@@ -649,6 +666,14 @@ display: none;
   padding: 0;
   font-size: 36px;
 }
+.carousel-section p {
+  text-align: left;
+  width: 100%;
+  font-family: var(--futura-medium);
+  color: gray;
+  padding: 20px;
+  font-size: 14px;
+}
 .carousel-container {
   position: relative;
   width: 100%; 
@@ -681,7 +706,7 @@ display: none;
 /*************** Planes y mensualidades*******************/
 
 .planes-container {
-  min-height: 150vh;
+  min-height: 190vh;
   background-position: left;
   background-size: cover;
   padding: 20px;
@@ -690,6 +715,7 @@ display: none;
   font-size: 36px;
   padding: 30px 0;
 }
+
 .planes-adult-cont {
   display: flex;
   flex-direction: column;
@@ -699,7 +725,7 @@ display: none;
 .planes-info-container {
   flex-direction: column;
   align-items: center;
-  padding: 0;
+  padding-block: 20px;
   gap: 2em;
 }
 .plan-info-card {
