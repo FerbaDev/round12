@@ -328,14 +328,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.header {
-  color: var(--naranja);
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .time-slot, .day {
   font-family: var(--futura-medium);
@@ -372,7 +364,9 @@ nav {
   border-right: 2px solid black;
   padding-right: 5px;
 }
-
+.calendar-mobile {
+display: none;
+}
 /********* BLOG ************/
 .blog-container {
   background-color: #0c0c0c;
