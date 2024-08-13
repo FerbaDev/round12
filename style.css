@@ -584,9 +584,27 @@ footer img {
   color: #ffffff; /* Color del ícono */
 }
 
-
-
-
+/*********************** BLOG BLOG BLOG ***************************/
+.blog-main {
+  padding: 100px 200px;
+  background-color: #0c0c0c;
+  color: white;
+}
+.blog-main h1 {
+  color: var(--amarillo);
+  font-family: var(--futura-bold);
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.blog-megacontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article {
+  
+}
 /******************************************************************************************/
 /*****************************************************************************************/
 /************************  media queries ********************************/
