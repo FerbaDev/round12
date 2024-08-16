@@ -58,7 +58,7 @@
 
 
 body {
-    max-width: 100%;
+    width: 100%;
 }
 a {
     color: inherit;
@@ -74,7 +74,7 @@ a {
 }
 /*  Hero  */
 .hero {
-    background-image: url("./images/hero-round-doce.webp");
+    background-image: url("./images/bg-hero.jpg");
     padding-top: 36px;
     background-position: center;
     background-size: cover;
@@ -141,17 +141,17 @@ nav {
 .hero-main a {
     background-color: var(--amarillo);
     color: var(--black);
-    padding: 5px 30px;
+    padding: 5px 64px;
     font-family: var(--futura-bold);
     font-size: 2rem;
 }
-/* .hero-main a:hover {
+.hero-main a:hover {
     transform: scale(1.1);
-} */
+}
 /****** Servicios ******/
 
 .servicios-container {
-    background-image: url("./images/bg-servicios.webp");
+    background-image: url("./images/bg-servicios.jpg");
     background-position: center;
     background-size: cover;
     padding: 100px 200px;
@@ -185,8 +185,6 @@ nav {
   text-align: center;
   padding: 20px;
   background-color: var(--gris);
-  max-width: 100vw;
-  overflow: hidden;
 }
 .carousel-section p {
   text-align: left;
@@ -207,18 +205,15 @@ nav {
 
 .carousel-track-container {
   overflow: hidden;
-  overflow-x: hidden;
   width: 100%;
   height: 550px;
 }
 
 .carousel-track {
-  width: 100%;
   display: flex;
   transition: transform 0.5s ease-in-out;
   gap: 1em;
   list-style-type: none;
-  overflow-x: hidden;
 }
 
 .carousel-slide {
@@ -228,7 +223,7 @@ nav {
 
 .carousel-slide img {
   width: 100%;
-  height: 99%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -264,7 +259,7 @@ nav {
 /*************** Planes y mensualidades*******************/
 
 .planes-container {
-  background-image: url("./images/bg-planes.webp");
+  background-image: url("./images/bg-planes.png");
   padding: 50px;
   background-position: center;
   background-size: cover;
@@ -304,7 +299,7 @@ nav {
 .planes-cta {
   background-color: #ca283c;
   color: #fff;
-  padding: 5px 34px;
+  padding: 5px 64px;
   font-family: var(--futura-bold);
   font-size: 2rem;
   text-transform: uppercase;
@@ -318,7 +313,7 @@ nav {
 }
 .calendar-header {
   width: 100%;
-  background-image: url("./images/bg-calendario.webp");
+  background-image: url("./images/bg-header-calendar.png");
   background-position: right;
   background-size: cover;
   display: flex;
@@ -333,7 +328,6 @@ nav {
 .calendar-info-header {
   display: flex;
   flex-direction: row;
-  gap: 2em;
 }
 .calendar-info-header h3 {
   color: var(--naranja);
@@ -347,7 +341,6 @@ nav {
   font-family: var(--futura-bold);
   text-wrap: balance;
   font-size: 1.3em;
-  gap: 2em;
 }
 /*     calendar grid    */
 .calendario-container {
@@ -433,12 +426,22 @@ display: none;
 .article-img {
   height: 150px;
   width: 150px;
-
+  background-position: center;
+  background-size: cover;
 }
-.article-img img {
-  height: 100%;
+.article-img1 {
+  background-image: url("./images/foto1.png");
 }
-
+.article-img2 {
+  background-image: url("./images/foto2.png");
+}
+.article-img3 {
+  background-image: url("./images/foto3.png");
+  background-position: 10px -10px;
+}
+.article-img4 {
+  background-image: url("./images/foto4.png");
+}
 .article-info {
   font-family: var(--futura-medium);
   text-wrap: balance;
@@ -466,14 +469,24 @@ display: none;
 
 /****************  Contacto *****************/
 .contact-container  {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
   justify-content: center;
-  background-color: var(--gris);
 }
-
+.contact-container::before  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/bg-contacto.png");
+  filter: blur(2px) brightness(110%); /* Aplica los filtros que desees */
+  z-index: -1;
+}
 .contact-box {
   width: 100%;
   display: flex;
@@ -577,7 +590,7 @@ footer {
   font-family: var(--futura-medium);
 }
 .company-info h4 {
-  color: #da6219;
+  color: #36afe2;
   font-size: 1.2em;
 }
 footer img {
@@ -683,13 +696,13 @@ article img {
   text-align: center;
 }
 .hero-main-cta {
-  display: inline;
+  display: inline-block;
   text-align: center;
-  padding: 5px 10px;
+  padding: 5px 24px;
   font-size: 1.5rem;
 }
 .hero-main-cta:hover {
-  transform: none;
+  transform: scale(1.1);
 }
 /****** Servicios ******/
 
@@ -741,7 +754,7 @@ display: none;
 }
 .carousel-container {
   position: relative;
-  width: 100vw; 
+  width: 100%; 
   margin: 0;
   padding: 20px 0;
 }
@@ -842,11 +855,10 @@ margin-block: 20px;
   font-size: 2em;
 }
 .header-horarios {
-
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 2em;
+  gap: 1em;
   font-size: 1.3em;
 }
 /*     calendar grid    */
@@ -962,9 +974,6 @@ footer img {
 article {
   width: 100%;
 }
-article h2 {
-  font-size: 1.8em;
-}
 article img {
   width: 100%;
   height: auto;
@@ -978,7 +987,6 @@ article img {
   header {
     padding-inline: 20px;
     justify-content: space-between;
-    width: 100%;
   }
   .abrir-menu,
   .cerrar-menu {
@@ -1037,30 +1045,3 @@ article img {
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
   }
-
-  html {
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-
-  .whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 25px;/* con esto se acerca o se aleja del pie de pagina */
-    right: 25px; /* con esto se acerca o se aleja del borde derecho */
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-}
-
-.whatsapp-float:hover {
-    background-color: #20c157;
-    cursor: pointer;
-}
