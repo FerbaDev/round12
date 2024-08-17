@@ -11,6 +11,10 @@
     font-weight: bold;
     font-style: normal;
 }
+
+
+.scale-up-center{animation:scale-up-center 0.7s; } 
+@keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
 :root {
     --black: #000000;
     --gris: #e8ebea;
@@ -996,6 +1000,7 @@ article img {
     opacity: 1;
     visibility: visible;
     background-color: var(--naranja);
+    z-index: 20;
   }
 
   .nav-list {
