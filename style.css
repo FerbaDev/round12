@@ -129,23 +129,72 @@ nav {
 /* .hero-main a:hover {
     transform: scale(1.1);
 } */
+/****** quienes somos ******/
+
+.quienes-somos-container {
+  background-color: var(--gris);
+  padding: 100px 100px;
+  width: 100%;
+  margin: auto;
+}
+.quienes-somos-box {
+padding: 0 100px;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+}
+
+.quienes-somos-info-container {
+display: flex;
+flex-direction: row;
+width: 100%;
+align-content: center;
+justify-content: center;
+gap: 2em;
+}
+.quienes-somos-info-container h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: var(--futura-bold);
+  width: 60%;
+  }
+.box-foto {
+height: 400px;
+}
+.box-foto img {
+  height: 100%;
+}
+.serv-header p {
+font-size: 16px;
+}
+.serv-list-container ul {
+font-family: var(--futura-bold);
+text-transform: uppercase;
+list-style-position: inside;
+padding-top: 4rem;
+}
 /****** Servicios ******/
 
 .servicios-container {
     background-image: url("./images/bg-servicios.webp");
     background-position: center;
     background-size: cover;
-    padding: 100px 200px;
+    padding: 100px 100px;
 }
 .serv-box {
-  width: 80%;
-  padding: 0 4rem;
+padding: 0 100px;
+width: 100%;
 }
-
+.serv-box h2 {
+  text-align: center;
+}
 .serv-box p {
   font-family: var(--futura-medium);
   font-size: 16px;
   color: grey;
+  text-transform: uppercase;
 }
 .serv-list-container {
   display: flex;
@@ -153,6 +202,9 @@ nav {
 }
 .box-vacia {
   width: 40%;
+}
+.serv-header h2 {
+  text-align: center;
 }
 .serv-header p {
   font-size: 16px;
@@ -172,6 +224,9 @@ nav {
   max-width: 100vw;
   overflow: hidden;
 }
+.carousel-section h2 {
+  text-align: center;
+}
 .carousel-section p {
   text-align: left;
   width: 80%;
@@ -179,6 +234,7 @@ nav {
   color: gray;
   padding: 20px 200px;
   font-size: 16px;
+  text-transform: uppercase;
 }
 .carousel-container {
   position: relative;
@@ -256,9 +312,13 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .planes-container p {
   font-family: var(--futura-medium);
+}
+.planes-container h2 {
+  text-align: center;
 }
 .planes-info-container {
   display: flex;
@@ -283,6 +343,7 @@ nav {
 .plan-precio {
   font-size: 2.5em;
   font-family: var(--futura-bold);
+  font-weight: 800;
 }
 
 .planes-cta {
@@ -550,9 +611,21 @@ footer {
   height: 300px;
   background-color: var(--amarillo);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+footer p {
+  font-family: var(--futura-medium);
+  font-size: 14px;
+  padding: 5px;
+}
+.footer-container {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 3em;
+  padding-top: 30px;
 }
 .company-info {
   display: flex;
@@ -679,6 +752,43 @@ article img {
 }
 .hero-main-cta:hover {
   transform: none;
+}
+/****** quienes somos ******/
+
+.quienes-somos-container {
+  padding: 20px;
+  margin: 0;
+}
+.quienes-somos-box {
+padding: 0;
+}
+.quienes-somos-info-container {
+flex-direction: column;
+}
+.quienes-somos-info-container h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: var(--futura-bold);
+  width: 100%;
+  text-wrap: balance;
+  padding-top: 20px;
+  }
+.box-foto {
+width: 100%;
+height: auto;
+}
+.box-foto img {
+  height: auto;
+  width: 100%;
+}
+.serv-header p {
+font-size: 16px;
+}
+.serv-list-container ul {
+font-family: var(--futura-bold);
+text-transform: uppercase;
+list-style-position: inside;
+padding-top: 4rem;
 }
 /****** Servicios ******/
 
@@ -914,6 +1024,9 @@ padding: 8px;
 
 /************************  footer ********************************/
 footer {
+  height: fit-content;
+}
+.footer-container {
   height: auto;
   flex-direction: column;
   justify-content: flex-start;
