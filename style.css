@@ -20,6 +20,7 @@
     --gris: #e8ebea;
     --amarillo: #f7c500;
     --naranja: #da6219;
+    --grisbar: #cdcdcd;
     --futura-medium: 'Futura Medium', sans-serif;
     --futura-bold: 'Futura Bold', sans-serif;
 }
@@ -55,7 +56,7 @@ a {
 }
 /*  Hero  */
 .hero {
-    background-image: url("./images/hero-round-doce.webp");
+    background-image: url("./images/hero-round12.webp");
     padding-top: 36px;
     background-position: center;
     background-size: cover;
@@ -137,34 +138,39 @@ nav {
   width: 100%;
   margin: auto;
 }
-.quienes-somos-box {
-padding: 0 100px;
+.quienes-somos-card {
 width: 100%;
 display: flex;
-flex-direction: column;
-align-content: center;
-justify-content: center;
+flex-direction: row;
+justify-content: space-between;
+background-color: rgb(200, 200, 200);
+border-radius: 16px;
+gap: 1em;
 }
 
 .quienes-somos-info-container {
 display: flex;
-flex-direction: row;
+flex-direction: column;
 width: 100%;
 align-content: center;
 justify-content: center;
-gap: 2em;
+gap: 1em;
+padding: 20px;
 }
-.quienes-somos-info-container h2 {
+.quienes-somos-info-container h3 {
+  font-size: 18px;
+  color: var(--black);
   text-align: left;
   text-transform: uppercase;
   font-family: var(--futura-bold);
-  width: 60%;
+  width: 100%;
   }
 .box-foto {
 height: 400px;
 }
 .box-foto img {
   height: 100%;
+  border-radius: 16px;
 }
 .serv-header p {
 font-size: 16px;
@@ -178,7 +184,7 @@ padding-top: 4rem;
 /****** Servicios ******/
 
 .servicios-container {
-    background-image: url("./images/bg-servicios.webp");
+    background-color: var(--grisbar);
     background-position: center;
     background-size: cover;
     padding: 100px 100px;
@@ -208,6 +214,7 @@ width: 100%;
 }
 .serv-header p {
   font-size: 16px;
+  color: var(--black);
 }
 .serv-list-container ul {
   font-family: var(--futura-bold);
@@ -304,7 +311,7 @@ width: 100%;
 /*************** Planes y mensualidades*******************/
 
 .planes-container {
-  background-image: url("./images/bg-planes.webp");
+  background-color: var(--amarillo);
   padding: 50px;
   background-position: center;
   background-size: cover;
@@ -316,6 +323,7 @@ width: 100%;
 }
 .planes-container p {
   font-family: var(--futura-medium);
+  
 }
 .planes-container h2 {
   text-align: center;
@@ -363,7 +371,7 @@ width: 100%;
 }
 .calendar-header {
   width: 100%;
-  background-image: url("./images/bg-calendario.webp");
+  background-color: var(--grisbar);
   background-position: right;
   background-size: cover;
   display: flex;
